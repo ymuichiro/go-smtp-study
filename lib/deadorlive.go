@@ -24,11 +24,4 @@ func DeadOrLive(uri string) bool {
 	} else {
 		return true
 	}
-
-	// body, _ := io.ReadAll(resq.Body)
-	// var result any
-
-	// json.Unmarshal(body, &result)
-
-	// fmt.Printf("%-v", result)
 }
