@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"server-watcher/lib"
 	"time"
 )
 
 var (
-	target     = "https://symbolnode.blockchain-authn.app:3001/node/health"
-	recipients = []string{"ym.u.ichiro@gmail.com"}
+	target     = os.Getenv("TARGET_URL")
+	recipients = []string{os.Getenv("GMAIL_TO")}
 )
 
 func main() {

@@ -9,7 +9,7 @@ import (
 
 var (
 	hostname = "smtp.gmail.com"
-	username = "symboljapanforumcommunity@gmail.com"
+	username = os.Getenv("GMAIL_USERNAME")
 	password = os.Getenv("GMAIL_PASSWORD")
 )
 
